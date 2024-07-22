@@ -4,12 +4,11 @@ import { AESCipherJS } from "./encrypt.js";
 // Example usage:
 let secretKey = 'my_encryption_key';
 let mydata = {
-    "user": "e9234576452034348692345",
-    "url": "/members/page.../...",
-    "name": "한국장학재단",
-    "checked": true,
-    "amount": 324,
-    "from": "node.js"
+    "name": "node user 03",
+    "age": 30,
+    "is_admin": true,
+    "personal_info": { "ssn": "123123", "phone": "456456" },
+    "tags": ["tag1", "tag2", "tag3"],
 };
 let aesCipher = new AESCipherJS(secretKey);
 
