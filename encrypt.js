@@ -2,8 +2,8 @@ import CryptoJS from "crypto-js";
 
 
 export class AESCipherJS {
-    constructor(key) {
-        this.key = CryptoJS.SHA256(CryptoJS.enc.Utf8.parse(key));
+    constructor(keyText) {
+        this.key = CryptoJS.SHA256(CryptoJS.enc.Utf8.parse(keyText));
     }
 
     encrypt(plainText) {
